@@ -1,0 +1,54 @@
+html, body {
+  color: #FFF;
+  font-family: 'Fresca', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  align-items: center;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.contactPage {
+  background: #D1D6F2;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.contactPage a {
+  color: #FFF;
+  font-size: 3em;
+  height: 3em;
+  text-decoration: none;
+  text-decoration: none;
+  width: 6em;
+}
+
+.contact {
+  background-color: #273772;
+  border: 0.2em solid;
+  border-radius: 1em;
+  height: 44em;
+  width: 62em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+p {
+  font-size: 2em;
+}

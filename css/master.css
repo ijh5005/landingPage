@@ -1,0 +1,248 @@
+/************************************************************
+
+                          GENERAL
+
+************************************************************/
+
+html, body {
+  color: #FFF;
+  font-family: 'Fresca', Helvetica;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/************************************************************
+
+                          HEADER
+
+************************************************************/
+
+.header {
+  background-color: #273772;
+  height: 13vh;
+  justify-content: space-between;
+}
+
+.logo, .logo img {
+  margin-left: 2em;
+}
+
+.contactLink a {
+  color: #FFFFFF;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.contactLink {
+  -moz-box-shadow: 0px 33px 179px -37px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 33px 179px -37px rgba(0, 0, 0, 0.75);
+  border-radius: 1em;
+  box-shadow: 0px 33px 179px -20px rgba(0, 0, 0, 0.75);
+  height: 5em;
+  margin-right: 2em;
+  width: 16em;
+}
+
+.contact {
+  -moz-box-shadow: 0px 33px 179px -37px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 33px 179px -37px rgba(0, 0, 0, 0.75);
+  background-color: #273772;
+  /*border: 0.2em solid #ffffe6;*/
+  border-radius: 1em;
+  box-shadow: 0px 33px 179px -37px rgba(0, 0, 0, 0.75);
+  height: 10em;
+  text-align: center;
+  width: 18em;
+}
+
+
+/************************************************************
+
+                        MIDDLE SECTION
+
+************************************************************/
+
+.content {
+  /*background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(173, 185, 227, 1)), color-stop(100%, rgba(86, 112, 227, 1)));*/
+  /*background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255, 255, 0, 0.2)), color-stop(100%, rgba(86, 112, 227, 1)));*/
+  background-image: url("centerBackground2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
+  height: 62vh;
+  justify-content: flex-end;
+}
+
+.content .title {
+  color: #273772;
+  flex-direction: column;
+  font-size: 3em;
+  text-align: center;
+}
+
+.content .title h3 {
+  font-size: 0.68em;
+  margin: 0;
+}
+
+.content h1 {
+  font-size: 3.2em;
+  margin: 0;
+}
+
+.graphic {
+  height: 13em;
+  width: 100vw;
+}
+
+.graphicPosition {
+  position: relative;
+  top: 6em;
+}
+
+.semiCircle {
+  background-color: #D1D6F2;
+  background-color: #a0aede;
+  border-top-left-radius: 50em;
+  border-top-right-radius: 50em;
+  height: 20em;
+  width: 34em;
+}
+
+.smallSemiCircle {
+  background-color: #D1D6F2;
+  background-color: #273772;
+  border: 0.6em solid #a0aede;
+  border-top-left-radius: 50em;
+  border-top-right-radius: 50em;
+  height: 11em;
+  position: absolute;
+  top: 3em;
+  width: 18em;
+}
+
+.leftCircle {
+  left: -8em;
+  top: 3em;
+}
+
+.rightCircle {
+  left: 24em;
+  top: 5em;
+}
+
+.phone {
+  height: 8em;
+  position: relative;
+  top: -4em;
+}
+
+.left {
+  transform: rotateZ(-34deg);
+}
+
+.right {
+  transform: rotateZ(18deg);
+}
+
+
+/************************************************************
+
+                          FOOTER
+
+************************************************************/
+
+.footer {
+  background: #D1D6F2;
+  background-color: #273772;
+  height: 25vh;
+  position: absolute;
+  width: 100vw;
+}
+
+.footer a {
+  color: #FFF;
+  font-size: 3em;
+  height: 3em;
+  text-decoration: none;
+  text-decoration: none;
+  width: 6em;
+}
+
+.footer a:hover, .contactLink a:hover {
+  color: yellow;
+}
+
+
+/************************************************************
+
+                        MEDIA QUERY
+
+************************************************************/
+
+@media (max-width: 1200px) {
+  .content .title {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 830px) {
+  .content {
+    justify-content: center;
+  }
+  .content .title {
+    font-size: 2em;
+  }
+  .graphic {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+  }
+  .contact {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .logo, .logo img {
+    display: none;
+  }
+  .contactLink {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 0;
+    margin: 0;
+  }
+}
+
+@media (max-height: 780px) {
+  .content {
+    justify-content: center;
+  }
+  .content .title {
+    font-size: 2em;
+  }
+  .graphic {
+    display: none;
+  }
+  .contact {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .contactLink {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 0;
+  }
+}
